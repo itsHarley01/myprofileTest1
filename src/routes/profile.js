@@ -3,7 +3,7 @@ import { Router } from "express"
 const router = Router()
 
 
-router.get('/myprofiless', (req, res) => {
+router.get('/myprofile', (req, res) => {
     const fname = "John harley"
     const mname = "quipanes"
     const lname = "Aparece"

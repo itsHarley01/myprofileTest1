@@ -11,16 +11,8 @@ app.get('/', (req, res) => {
 
 app.use(ProfileRouter)
 
-// app.get('/myprofile', (req, res) => {
-//     const fname = "John harley"
-//     const mname = "quipanes"
-//     const lname = "Aparece"
-//     const gender = "Male"
-//     const email = "harlae116@gmail.com"
-//     res.status(200).send({fullname: fname+mname+lname, gender: gender, email,email})
-// })
-
-const PORT = 3333
+// const PORT = 3333
+const PORT = process.env.PORT || 3333
 
 app.listen(PORT, () => {
     console.log('server started')
