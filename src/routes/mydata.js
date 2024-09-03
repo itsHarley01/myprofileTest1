@@ -6,6 +6,7 @@ const fname = "JOHN HARLEY"
 const mname = "QUIPANES"
 const lname = "APARECE"
 const gender = "MALE" 
+const gender2 = "MALE" 
 const age = "21"
 const email = "joqu.aparece.swu@phinmaed.com"
 
