@@ -1,17 +1,16 @@
 import express from "express";
-import ProfileRouter from './routes/profile.js'
+import Data from './routes/mydata.js'
 
 const app = express()
 
 app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.status(200).send('welcome')
+    res.status(200).send('welcome to my humble node express')
 })
  
-app.use(ProfileRouter)
+app.use(Data)
 
-// const PORT = 3333
 const PORT = process.env.PORT || 3333
 
 app.listen(PORT, () => {
